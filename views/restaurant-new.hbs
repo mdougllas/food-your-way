@@ -1,0 +1,22 @@
+{{> navigator}}
+<form action="/new-restaurant" method="post" id="form">
+  <h2>Insert Restaurant</h2>
+
+  <label for="name">Name</label>
+  <input type="text" name="name" placeholder="Vai se foder idiota">
+
+  <label for="name">Address</label>
+  <input type="text" name="address" placeholder="Vai pra puta que pariu">
+
+  <label for="name">Food Type</label>
+  <input type="text" name="phone" placeholder="Learn how to treat people">
+
+
+
+  {{#if errorMessage }}
+    <div class="error-message">{{ errorMessage }}</div>
+  {{/if}}
+
+  <button>Insert</button>
+
+</form>
